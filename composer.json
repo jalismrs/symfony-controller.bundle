@@ -8,39 +8,40 @@
   ],
   "autoload" : {
     "psr-4" : {
-      "Jalismrs\\ControllerBundle\\" : "src"
+      "Jalismrs\\Symfony\\Common\\" : "src/"
     }
   },
   "autoload-dev" : {
     "psr-4" : {
-      "Tests\\" : "tests"
+      "Tests\\" : "tests/"
     }
   },
   "config" : {
     "sort-packages" : true
   },
-  "description" : "API Throttler Symfony bundle helps you throttle API calls using a persistent token bucket algorithm",
+  "description" : "Adds Symfony controller abstract class",
   "license": "MIT",
-  "minimum-stability": "dev",
-  "name" : "jalismrs/symfony-controller.bundle",
+  "name" : "jalismrs/symfony.common.controller",
   "require-dev" : {
     "composer/package-versions-deprecated" : "*",
     "phpunit/phpunit" : "9.4.2",
-    "roave/security-advisories" : "dev-master"
+    "roave/security-advisories" : "dev-master",
+    "symfony/mime" : "^5.0"
   },
   "require" : {
     "php" : "^7.4",
-    "jalismrs/symfony-helpers-request.bundle" : "^1.0.0",
-    "symfony/framework-bundle" : "^5.0",
-    "symfony/http-kernel" : "^5.0",
-    "symfony/dependency-injection": "^5.0"
+    "jalismrs/symfony.common.helpers.request" : "^1.0.0",
+    "symfony/http-foundation" : "^5.0",
+    "symfony/framework-bundle" : "^5.0"
+  },
+  "suggest" : {
+    "symfony/mime": "Get a more accurate Content-Type header value when using returnFile()"
   },
   "support" : {
     "email" : "dev@jalis.fr",
-    "issues" : "https://github.com/jalismrs/symfony-controller.bundle/issues",
-    "wiki" : "https://github.com/jalismrs/symfony-controller.bundle/wiki",
-    "source" : "https://github.com/jalismrs/symfony-controller.bundle",
-    "docs" : "https://github.com/jalismrs/symfony-controller.bundle"
-  },
-  "type" : "symfony-bundle"
+    "issues" : "https://github.com/jalismrs/symfony.common.controller/issues",
+    "wiki" : "https://github.com/jalismrs/symfony.common.controller/wiki",
+    "source" : "https://github.com/jalismrs/symfony.common.controller",
+    "docs" : "https://github.com/jalismrs/symfony.common.controller"
+  }
 }
