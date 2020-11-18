@@ -35,7 +35,8 @@
     "symfony/framework-bundle" : "^5.0"
   },
   "suggest" : {
-    "symfony/mime": "Get a more accurate Content-Type header value when using returnFile()"
+    "symfony/mime": "Get a more accurate Content-Type header value when using returnFile()",
+    "symfony/serializer": "Adds configurable serialization when using returnJson()"
   },
   "support" : {
     "email" : "dev@jalis.fr",

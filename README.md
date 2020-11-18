@@ -1,4 +1,4 @@
-# Symfony Bundle Controller
+# symfony.common.controller
 
 Adds Symfony controller abstract class
 
